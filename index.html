@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maksymilian Gala</title>
+    <!--Yeah, this page is not the best code I've ever written, but pls, it's html xD, not even programming language-->
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        background-color: #1b1d1e;
+        font-family: Lora, sans-serif;
+      }
+
+      header {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+      }
+
+      main {
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        flex-direction: column;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .projects {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        background-color: #3a3a3a;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        width: 300px;
+        height: 250px;
+      }
+
+      .avatar {
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .card > a,
+      .card > a:visited, 
+      .contact > a,
+      .contact > a:visited {
+        color: #328cf7;
+      }
+      .icons {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="avatar.png"
+        alt="Avatar"
+        width="150"
+        height="150"
+        class="avatar"
+      />
+      <h1>Maksymilian Gala</h1>
+      <div class="icons">
+        <a href="https://github.com/maxidragon" title="GitHub">
+          <img src="github.png" alt="GitHub" width="50" height="50" />
+        </a>
+        <a href="mailto:contact@maksymiliangala.com" title="Email">
+          <img src="mail.png" alt="Mail" width="50" height="50" />
+        </a>
+        <a href="https://worldcubeassociation.org/persons/2022GALA01" title="WCA Profile">
+            <img src="https://www.worldcubeassociation.org/files/WCAlogo.svg" alt="WCA" width="50" height="50" />
+        </a>
+      </div>
+      <h2>Passionate software developer from Poland</h2>
+    </header>
+    <main>
+      <div>
+        Hi! I'm Maks, 17 years old passionate software developer from Poland.<br />
+        Outside of coding I'm a speedcuber and regurally participate in
+        competitions.
+      </div>
+      <div style="display: flex; flex-direction: column">
+        Technologies I'm using the most:
+        <ul>
+          <li>- TypeScript</li>
+          <li>- React</li>
+          <li>- Node.js</li>
+          <li>- Nest.js</li>
+          <li>- MariaDB</li>
+          <li>- PostgreSQL</li>
+        </ul>
+      </div>
+      <div>
+        What I'm learning currently?
+        <ul>
+          <li>- Rust</li>
+        </ul>
+      </div>
+      <h3>Some of my good personal projects:</h3>
+      <div class="projects">
+        <div class="card">
+          <h3>FKMTime</h3>
+          <p>
+            A system for running speedcubing competitions without scorecards!
+          </p>
+          <p>Built with Nest.js, React, PostgreSQL</p>
+          <a href="https://github.com/FKMTime/FKMTime" target="_blank"
+            >GitHub</a
+          >
+        </div>
+        <div class="card">
+          <h3>ProductiveMaster</h3>
+          <p>A simple web application built to improve my productivity!</p>
+          <p>Built with: Django REST, PostgreSQL, React</p>
+          <a
+            href="https://github.com/maxidragon/ProductiveMaster"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+        <div class="card">
+          <h3>TopPlayers</h3>
+          <p>
+            A simple web application that provides information on where the best
+            speedcubers in the world are competing this weekend.
+          </p>
+          <p>Built with: React</p>
+          <a href="https://github.com/maxidragon/TopPlayers" target="_blank"
+            >GitHub</a
+          >
+        </div>
+        <div class="card">
+          <h3>DriveQuest</h3>
+          <p>
+            Web app for practicing questions for polish driver's license exam
+          </p>
+          <p>Built with: Nest.js, React, PostgreSQL</p>
+          <a href="https://github.com/maxidragon/DriveQuest" target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div>
+        <h3>Want to contact me?</h3>
+        <p class="contact"> 
+          You can reach me via email:
+          <a href="mailto:contact@maksymiliangala.com"
+            >contact@maksymiliangala.com</a
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
